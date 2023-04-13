@@ -1561,11 +1561,13 @@ img {
     z-index: 1;
     background-color: #070b3b;
     padding: 42px 0px;
+    margin-top: 70px;
 }
 .inner-banner-IFCS {
     position: relative;
     z-index: 1;
     padding: 42px 0px;
+    margin-top:29px;
 }
 
 .inner-banner .inner-title {
