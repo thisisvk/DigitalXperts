@@ -43,6 +43,8 @@ a {
     text-decoration: none
 }
 
+
+
 a:hover,
 a:focus {
     text-decoration: none
@@ -1541,7 +1543,12 @@ img {
     -webkit-transition: .5s;
     transition: .5s
 }
-
+.margin-remover{
+    margin-top: -80px;
+}
+.margin-remover-row{
+    margin-top: -100px;
+}
 .banner-bottom-card p {
     margin-bottom: 0;
     font-weight: 500
@@ -1560,14 +1567,11 @@ img {
     position: relative;
     z-index: 1;
     background-color: #070b3b;
-    padding: 42px 0px;
-    margin-top: 70px;
+    padding: 62px 0px;
 }
 .inner-banner-IFCS {
     position: relative;
     z-index: 1;
-    padding: 42px 0px;
-    margin-top:29px;
 }
 
 .inner-banner .inner-title {
