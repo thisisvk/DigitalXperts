@@ -5509,7 +5509,8 @@ img {
 
 .pagination-area {
     margin-top: 10px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    display: none;
 }
 
 .pagination-area .page-numbers {
@@ -5525,7 +5526,8 @@ img {
     margin-left: 3px;
     margin-right: 3px;
     font-size: 18px;
-    border-radius: 5px
+    border-radius: 5px;
+    display: none;
 }
 
 .pagination-area .page-numbers:hover {
@@ -6072,13 +6074,13 @@ img {
     margin-top: 0;
     font-size: 24px;
     margin-bottom: 30px;
-    color: black;
+    color: #fff;
     line-height: 1.2
 }
 
 .footer-widget p {
     margin-bottom: 20px;
-    color: black;
+    color: #fff;
     max-width: 300px
 }
 .footer-call-content{
@@ -6095,19 +6097,22 @@ img {
 }
 
 .footer-widget .footer-call-content:hover i {
-    background-color: #0071dc;
-    color: #fff
+    background-color: #fff;
+    color: rebeccapurple;
 }
-
+.footer-widget .footer-call-content i {
+    /* top: 15px; */
+    color: black;
+}
 .footer-widget .footer-call-content h3 {
     font-size: 24px;
     line-height: 1;
     margin-bottom: 5px;
-    color: #252525
+    color: #fff
 }
 
 .footer-widget .footer-call-content span a {
-    color: #ffdd63 !important;
+    color: #5a5851 !important;
     font-weight: 600
 }
 
@@ -6118,7 +6123,7 @@ img {
     color: yellow !important;
 }
 .footer-call-content h3{
-    color: antiquewhite !important;
+    color: black !important;
 }
 .footer-call-content .small{
     color: #fff !important;
@@ -6161,7 +6166,7 @@ img {
 }
 
 .footer-widget .footer-list li a {
-    color: black;
+    color: #fff;
     font-weight: 400
 }
 
@@ -6277,6 +6282,20 @@ img {
     color: #fff
 }
 
+.sub-footer{
+    background: #d5e5f4;
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+    flex-wrap: wrap;
+}
+
+.address-font{
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
 .footer-widget .newsletter-area .newsletter-form .validation-danger {
     font-size: 18px;
     margin-top: 5px;
@@ -6740,7 +6759,10 @@ img {
 .footer-widget .footer-contact-list li .content a:hover {
     color: #ffc221
 }
-
+.footer-bg{
+    background: #070b3b;
+    color: #fff;
+}
 .footer-bg2 {
     background-color: #0c243b;
     position: relative;
@@ -6931,4 +6953,220 @@ img {
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%
     }
+}
+
+
+
+
+/* -----------Pop-Up------------- */
+
+
+.button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 214px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+
+/* -----------Pop-Up------------- */
+
+/* --------Pop-Up Form----------- */
+
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+// Helpers
+@mixin clearfix {
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+
+.align-center {
+   text-align: center;
+}
+.row-pop
+   @include clearfix;
+   margin: -20px 0;
+   .col {
+      padding: 0 20px;
+      float: left;
+      box-sizing: border-box;
+      &.x-50 {
+         width: 50%;
+      }
+      &.x-100 {
+         width: 100%;
+      }
+   }
+}
+
+.content-wrapper {
+   min-height: 100%;
+   position: relative;
+}
+
+.get-in-touch {
+   max-width: 650px;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+  
+  .title {
+     text-align: center;
+     font-family: Raleway, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font-size: 36px;
+     line-height: 48px;
+     padding-bottom: 48px;
+  }
+}
+
+.contact-form {
+   .form-field {
+      position: relative;
+      margin: 32px 0;
+      top: 126px;
+   }
+   .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 2px 0;
+      border-color: #000;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      
+      &:focus {
+         outline: none;
+      }
+      
+      &:focus,
+      &.not-empty {
+         + .label {
+            transform: translateY(-24px);
+         }
+      }
+   }
+   .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #888;
+      cursor: text;
+      transition: transform .2s ease-in-out;
+   }
+   
+   .submit-btn {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+   }
+}
+
+.note {
+   position: absolute;
+   left: 0;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   font-family: Lusitana, serif;
+   font-size: 16px;
+   line-height: 21px;
+   
+   .link {
+      color: #888;
+      text-decoration: none;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+/* --------Pop-Up Form----------- */
+
+
+.own{
+    
+    font-size: 55px;
+    /* position: relative; */
+    position: absolute;
+    /* right: 0; */
+    right: 41px;
+    top: 17px;
+
 }
