@@ -230,7 +230,7 @@ img {
 .default-btn:hover:before {
     height: 100%;
     width: 135%;
-    background-color: #252525
+    background-color: rgb(7 11 59)25;
 }
 
 .btn-bg-one {
@@ -7356,6 +7356,12 @@ img {
     width: 100%;
 }
 
+.small{
+    font-size: 16px !important;    
+}
+p{
+    font-size: 16px !important;
+}
 .card__row {
     color: black;
     width: 100%;
@@ -7371,23 +7377,27 @@ img {
 }
 
 .card__link {
-    color: var(--color01);
+    color: #fff;
     padding: 10px 15px;
     margin: 20px 0;
     text-decoration: none;
     border-radius: 50px;
+    background-color: #0071dc !important;
 }
 
 .card__link:hover {
-    background-color: var(--color02Hover) !important;
+    background: #070b3b !important;
+    color: #fff;
 }
 
 .card-pr:nth-of-type(2) .card__link:hover {
-    background-color: var(--color06Hover) !important;
+    background: #070b3b !important;
+    color: #fff;
 }
 
 .card-pr:nth-of-type(3) .card__link:hover {
-    background-color: var(--color04Hover) !important;
+    background: #070b3b !important;
+    color: #fff;
 }
 
 /* Pricing Css  */

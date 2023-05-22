@@ -25,6 +25,9 @@
     display: block;
     font-weight: 700
 }
+p{
+    font-size: 16px !important;
+}
 
 .mean-container a.meanmenu-reveal span {
     display: block;
